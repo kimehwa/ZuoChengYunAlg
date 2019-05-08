@@ -37,6 +37,7 @@ public class RemoveMidNode {
     public Node removeByRatio(Node head, int a, int b) {
         /**
          * java的向上取整是math.ceil
+         * 这个是删除a/b的问题
          */
         if (a < 1 || a > b) {
             return head;
