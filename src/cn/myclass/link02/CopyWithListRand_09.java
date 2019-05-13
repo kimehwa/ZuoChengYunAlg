@@ -71,7 +71,7 @@ public class CopyWithListRand_09 {
         Node res = head.next;
         cur = head;
         while (cur != null) {
-            next = cur.next.next;
+            next = cur.next.next;//这里先加next会使代码简洁一些
             copyNode = cur.next;
             cur.next = next;
             copyNode.next = next != null ? next.next : null;
